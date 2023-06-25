@@ -1,0 +1,114 @@
+/* Background Image*/
+#bodybg {
+    box-sizing: border-box;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/523/398/original/circuit-board-technology-background-purple-and-blue-light-banner-electronic-system-concept-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* To make the background image more clear and less pixelated*/
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+#font1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#wrapper {
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "innergridnav innergridnav innergridnav"
+        "nav nav nav";
+}
+
+#nav,
+#innergridnav,
+#home,
+#aboutme,
+#contacts,
+#school,
+#copyright,
+#statement {
+    border: 1px solid;
+}
+
+#nav {
+    grid-area: nav;
+    background-color: dodgerblue;
+}
+
+#innergridnav {
+    display: block;
+    display: grid;
+    grid-area: innergridnav;
+    background-color: dodgerblue;
+    text-align: center;
+    font-weight: 1000;
+    grid-template-areas: "home aboutme school contacts";
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    grid-row-gap: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+/* The Blue box of the footer */
+footer {
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: dodgerblue;
+    height: 6%;
+    border: 3px solid black;
+}
+
+/* Tells 'Krish Ram 2023' to go to the left */
+h2.cptext {
+    float: left;
+}
+
+/* The font size, padding, colour, alignment, and display type of the footer text */
+h2 {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 130%;
+    padding-right: 0.68%;
+    padding-bottom: 0.58%;
+    padding-left: 0.3%;
+}
+
+/* Copyright link colour and text decoration */
+h2 a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Moves 'Copyright Statement' and 'For Further Information:' to the right */
+h2.g {
+    float: right;
+}
+
+/* When I am on the active webpage, then its tab will be this colour, navigation bar */
+.active {
+    background: #da1990;
+}
+
+/* When I hover over a tab it will turn this colour, navigation bar */
+a:hover:not(.active) {
+    background-color: #111;
+}
